@@ -11,10 +11,11 @@ app.use(cors())
 const userRouter = require("./Routes/userRoutes")
 const adminRouter = require("./Routes/adminRoutes")
 const productRouter = require("./Routes/productRoutes")
+const cartRoutes = require("./Routes/productCartRoutes")
 app.use('/api/user',userRouter)
 app.use('/api/admin',adminRouter)
 app.use('/api/product',productRouter)
-
+app.use('/api/cart', cartRoutes);
 
 
 
